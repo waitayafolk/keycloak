@@ -1,2 +1,2 @@
 step 1 : docker build . -t <Name_image>
-step 2 : docker run --name <name_contrainer> -p 8443:8443 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=change_me mykeycloak start --optimized 
+step 2 : docker run --name <name_contrainer> -p 8443:8443 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=change_me <Name_image> start --optimized 
