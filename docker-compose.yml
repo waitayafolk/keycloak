@@ -1,0 +1,18 @@
+version: '3'
+services:
+
+  keycloak:
+    image: jboss/keycloak
+    environment:
+      KEYCLOAK_USER : admin
+      KEYCLOAK_PASSWORD : admin
+      DB_VENDOR: postgres
+      DB_ADDR: 172.20.91.50
+      DB_PORT: 5432
+      DB_DATABASE: keycloak
+      DB_USER: root
+      DB_PASSWORD: 'ADMIN@Sso.go.th'
+    ports:
+      - "8080:8080"
+      
+volumes:
